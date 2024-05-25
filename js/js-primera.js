@@ -50,8 +50,9 @@ function onboarding() {
 
         } else if (mainMenu == 0) {
             alert('Gracias por visitar Sharestic, esperamos pronto tu registro.');
+            break;
         } else {
-            alert('Ingresa una opción válida')
+            alert('Ingresa una opción válida');
         }  
     }
 }
