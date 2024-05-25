@@ -10,7 +10,7 @@ function onboarding() {
         Selecciona una opción:
         * 1. Crear usuario y comenzar a compartir
         * 0. Salir
-        `), 10);
+        `));
 
         if (mainMenu === 1) {       
             const user = prompt('Por favor ingresa un nombre de usuario');
@@ -30,7 +30,7 @@ function onboarding() {
                 console.log(user + ' compartio -\n\n' + 'Canción: ' + Song.song + '\nAlbum: ' + Song.album + '\nArtista: ' + Song.artist + '\nGénero: ' + Song.genre);
 
                 let like = false;
-                console.log();
+                console.log('Like: ' + like);
             }
             enterSong();
 
@@ -41,7 +41,7 @@ function onboarding() {
 
                 * 1. Sí
                 * 0. No, regresar a menú principal.
-                `), 10);
+                `));
 
                 if (userMenu === 1) {
                     enterSong();
